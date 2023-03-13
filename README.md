@@ -4,7 +4,7 @@
 
 # 1 What is it and how to use it?
 
-In this repository, we implemented two ground effect models in AirSim, which can be activated through customized high-level C++/Python APIs. In order to use it, you need to substitute the original AirLib folder with the one provided here and rebuild by running `./build.sh` if Ubuntu is used (check out more on development workflow here: [Windows](https://microsoft.github.io/AirSim/dev_workflow/) or [Linux](For Linux, make code changes in AirLib or Unreal/Plugins folder and then run  to rebuild. This step also copies the build output to Blocks sample project. You can then follow above steps again to re-run.)). However, we are also aware that many researchers have already made their own contributions on the source code, and cannot simply replace their AirLib folder with this one. Therefore, we provide details in the sequel on what mathematical models do we choose for ground effect and how we implement them in the source code. 
+In this repository, we implemented two ground effect models in AirSim, which can be activated through customized high-level C++/Python APIs. In order to use it, you need to substitute the original AirLib folder with the one provided here and rebuild by running `./build.sh` if Ubuntu is used (check out more on development workflow here: [Windows](https://microsoft.github.io/AirSim/dev_workflow/) or Linux). However, we are also aware that many researchers have already made their own contributions on the source code, and cannot simply replace their AirLib folder with this one. Therefore, we provide details in the sequel on what mathematical models do we choose for ground effect and how we implement them in the source code. 
 
 # 2. Mathematical models
 
@@ -44,6 +44,8 @@ Assumptions:
 - All of the rotors are the same.
 
 The following equation shows the relation between motor speeds and generalized forces through a mixer matrix.
+
+
 $$
 \eta = 
 \begin{bmatrix}
