@@ -39,7 +39,7 @@ $$ f_u = [0, 0, T]^T: \text{total thrust from 4 rotors [N]} $$
 
 $$ \tau_u = [\tau_x, \tau_y, \tau_z]^T: \text{body torque from 4 rotors} $$
 
-$$ f_a, \tau_a \in \mathrm{R}^3: \text{unknown disturbance forces and torques}
+$$ f_a, \tau_a \in \mathrm{R}^3: \text{unknown disturbance forces and torques} $$
 
 
 ## 2.2 Mixer (mapping of control input to actuator output)
@@ -51,7 +51,7 @@ Assumptions:
 
 The following equation shows the relation between motor speeds and generalized forces through a mixer matrix.
 
-
+```math
 $$
 \eta = 
 \begin{bmatrix}
@@ -69,7 +69,7 @@ n_1^2 \\ n_2^2 \\ n_3^2 \\ n_4^2
 \end{bmatrix} 
 = A u
 $$
-
+```
 
 
 where 
