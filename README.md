@@ -9,6 +9,7 @@ In this repository, we implemented two ground effect models in AirSim, which can
 ## 2.1 Quadrotor kinematics and dynamics
 
 The following equations show a standard formulation of quadrotor kinematics and dynamics.
+
 $$ \dot{p} = v $$
 $$\dot{R} = R S(\omega)$$
 $$m \dot{v} = mg + R f_u + f_a$$
@@ -16,20 +17,18 @@ $$J \dot{\omega} = J \omega \times \omega + \tau_u + \tau_a$$
 
 
 where
-$$
-\begin{split}
-& p \in \mathrm{R}^3: \text{global position} \\
-& v \in \mathrm{R}^3: \text{linear velocity} \\
-& R \in \mathrm{SO(3)}: \text{attitude rotation matrix} \\
-& \omega \in \mathrm{R}^3: \text{body angular velocity} \\
-& m, J: \text{mass and inertia matrix} \\
-& S(\cdot): \text{skew-symmetric mapping} \\
-& g = [0, 0, -9.8]^T: \text{gravity vector} \\
-& f_u = [0, 0, T]^T: \text{total thrust from 4 rotors [N]} \\
-& \tau_u = [\tau_x, \tau_y, \tau_z]^T: \text{body torque from 4 rotors} \\
-& f_a, \tau_a \in \mathrm{R}^3: \text{unknown disturbance forces and torques}
-\end{split}
-$$
+
+$$ p \in \mathrm{R}^3: \text{global position} $$
+$$ v \in \mathrm{R}^3: \text{linear velocity} $$
+$$ R \in \mathrm{SO(3)}: \text{attitude rotation matrix} $$
+$$ \omega \in \mathrm{R}^3: \text{body angular velocity} $$
+$$ m, J: \text{mass and inertia matrix} $$
+$$ S(\cdot): \text{skew-symmetric mapping} $$
+$$ g = [0, 0, -9.8]^T: \text{gravity vector} $$
+$$ f_u = [0, 0, T]^T: \text{total thrust from 4 rotors [N]} $$
+$$ \tau_u = [\tau_x, \tau_y, \tau_z]^T: \text{body torque from 4 rotors} $$
+$$ f_a, \tau_a \in \mathrm{R}^3: \text{unknown disturbance forces and torques}
+
 
 ## 2.2 Mixer (mapping of control input to actuator output)
 
