@@ -73,6 +73,7 @@ $$
 
 
 where 
+```math
 $$
 \begin{split}
 & C_T: \text{thrust coefficient}=\frac{T}{\rho n^2 D^4} \\
@@ -84,7 +85,7 @@ $$
 & A: \text{actuator effectiveness matrix}
 \end{split}
 $$
-
+```
 
 Note: Propeller aerodynamic coefficients used here follow standard definitions as instructed by [UIUC Propeller Data Site](https://m-selig.ae.illinois.edu/props/propDB.html). Moreover, another important  parameter of propeller characteristics is power coefficient which can be formulated as follows:
 $$
