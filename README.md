@@ -1,4 +1,4 @@
-# Custom Implementation of Quadrotor Ground Effect
+# AirSim-GE: A Custom Implementation of Quadrotor Ground Effect in AirSim
 
 [TOC]
 
