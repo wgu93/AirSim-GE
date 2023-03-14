@@ -73,33 +73,42 @@ $$
 
 
 where 
-```math
-$$
-\begin{split}
-& C_T: \text{thrust coefficient}=\frac{T}{\rho n^2 D^4} \\
-& C_Q: \text{moment/torque coefficient}=\frac{Q}{\rho n^2 D^5} \\
-& \rho: \text{air density [kg/m^3]} \\
-& n: \text{revolutions per second [1/s]} \\
-& D: \text{diameter of propeller [m]} \\
-& l_{arm}: \text{distance from motor axis to the center of the drone} \\
-& A: \text{actuator effectiveness matrix}
-\end{split}
-$$
-```
+
+$$ C_T: \text{thrust coefficient}=\frac{T}{\rho n^2 D^4} $$
+
+$$ C_Q: \text{moment/torque coefficient}=\frac{Q}{\rho n^2 D^5} $$
+
+$$ \rho: \text{air density [kg/m^3]} $$
+
+$$ n: \text{revolutions per second [1/s]} $$
+
+$$ D: \text{diameter of propeller [m]} $$
+
+$$ l_{arm}: \text{distance from motor axis to the center of the drone} $$
+
+$$ A: \text{actuator effectiveness matrix} $$
+
 
 Note: Propeller aerodynamic coefficients used here follow standard definitions as instructed by [UIUC Propeller Data Site](https://m-selig.ae.illinois.edu/props/propDB.html). Moreover, another important  parameter of propeller characteristics is power coefficient which can be formulated as follows:
+
 $$
 C_P = \frac{P}{\rho n^3 D^5} = 2\pi C_Q
 $$
+
 Ideal thrust is
+
 $$
 T_{ideal} = \sum_{i=1}^4 C_T n_i^2
 $$
+
 Actual thrust affected by ground effect is
+
 $$
 T_{actual} = T_{ideal} f_{GE}
 $$
+
 where
+
 $$
 f_{GE}: \text{ground effect coefficient}
 $$
