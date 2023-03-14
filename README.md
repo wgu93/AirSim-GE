@@ -11,10 +11,10 @@ In this repository, we implemented two ground effect models in AirSim, which can
 The following equations show a standard formulation of quadrotor kinematics and dynamics.
 $$
 
-\dot{p} &= v \\
-\dot{R} &= R S(\omega) \\
-m \dot{v} &= mg + R f_u + f_a \\
-J \dot{\omega} &= J \omega \times \omega + \tau_u + \tau_a
+\dot{p} = v \\
+\dot{R} = R S(\omega) \\
+m \dot{v} = mg + R f_u + f_a \\
+J \dot{\omega} = J \omega \times \omega + \tau_u + \tau_a
 
 $$
 
