@@ -78,7 +78,7 @@ $$ C_T: \text{thrust coefficient}=\frac{T}{\rho n^2 D^4} $$
 
 $$ C_Q: \text{moment/torque coefficient}=\frac{Q}{\rho n^2 D^5} $$
 
-$$ \rho: \text{air density [kg/m^3]} $$
+$$ \rho: \text{air density [kg/m\^3]} $$
 
 $$ n: \text{revolutions per second [1/s]} $$
 
