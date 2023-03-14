@@ -1,10 +1,8 @@
 # AirSim-GE: A Custom Implementation of Quadrotor Ground Effect in AirSim
 
-[TOC]
-
 # 1 What is it and how to use it?
 
-In this repository, we implemented two ground effect models in AirSim, which can be activated through customized high-level C++/Python APIs. In order to use it, you need to substitute the original AirLib folder with the one provided here and rebuild by running `./build.sh` if Ubuntu is used (check out more on development workflow here: [Windows](https://microsoft.github.io/AirSim/dev_workflow/) or Linux). However, we are also aware that many researchers have already made their own contributions on the source code, and cannot simply replace their AirLib folder with this one. Therefore, we provide details in the sequel on what mathematical models do we choose for ground effect and how we implement them in the source code. 
+In this repository, we implemented two ground effect models in AirSim, which can be activated through customized high-level C++/Python APIs. In order to use it, you need to substitute the original AirLib folder with the one provided here and rebuild by running `./build.sh` if using Ubuntu (check out more on development workflow for windows [here](https://microsoft.github.io/AirSim/dev_workflow/)). However, we are also aware that many researchers have already made their own contributions on the source code, and cannot simply replace their AirLib folder with this one. Therefore, we provide details in the sequel on what mathematical models do we choose for ground effect and how we implement them in the source code. 
 
 # 2. Mathematical models
 
@@ -12,12 +10,12 @@ In this repository, we implemented two ground effect models in AirSim, which can
 
 The following equations show a standard formulation of quadrotor kinematics and dynamics.
 $$
-\begin{split}
+
 \dot{p} &= v \\
 \dot{R} &= R S(\omega) \\
 m \dot{v} &= mg + R f_u + f_a \\
 J \dot{\omega} &= J \omega \times \omega + \tau_u + \tau_a
-\end{split}
+
 $$
 
 where
